@@ -648,10 +648,20 @@
     handlebars "^4.7.6"
     pug "^3.0.1"
 
-"@nestjs/bull@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@nestjs/bull/-/bull-0.4.0.tgz#b277b642cd587ee184f1be14d8d6418b5462e93e"
-  integrity sha512-6Bv+qx+kjekwM4WPyAxQ+krydJe0xHe5j1+Ui8tpNZ/laMeAjccRWV8yQ9u6gFOGifWFfkBFVM3pNGuFVrQnxw==
+"@nestjs/bull-shared@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/bull-shared/-/bull-shared-0.1.0.tgz#3f2b21432b716944fbd35f9fb22c059a0b9c0395"
+  integrity sha512-BVVLj0HeLZ3bj9G/AXW+43AVT8BSSgP+s+9+YHrkGSLLgXNc5G2lRL20zOTqMO1gPiKRwOOvO8r3//5Ijyaikg==
+  dependencies:
+    tslib "2.4.0"
+
+"@nestjs/bull@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@nestjs/bull/-/bull-0.6.0.tgz#45a26806fd3797b572d09bf4bc3fd1e7e573f062"
+  integrity sha512-QiuCEwwJ9ahENAS4NEaa3sFWZrasjYRuQrFRV5Z64YeQOj1c+IH3PJ3oq2BIUL3m9sNXPVeJrKkRjS3OByX0ng==
+  dependencies:
+    "@nestjs/bull-shared" "^0.1.0"
+    tslib "2.4.0"
 
 "@nestjs/cli@^8.0.0":
   version "8.1.1"
@@ -6038,6 +6048,11 @@ tslib@2.3.0, tslib@^2.0.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.0.tgz#803b8cdab3e12ba581a4ca41c8839bbb0dacb09e"
   integrity sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==
+
+tslib@2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
